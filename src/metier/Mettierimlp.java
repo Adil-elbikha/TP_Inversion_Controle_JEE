@@ -3,7 +3,7 @@ package metier;
 import dao.DaoImpl;
 import dao.IDAO;
 
-public class Mettierimlp implements IMétier {
+public class Mettierimlp implements IMetier {
 	//couplage faible
 	private IDAO dao;
 	
@@ -12,8 +12,8 @@ public class Mettierimlp implements IMétier {
 
 	@Override
 	public double calcul() {
-		double temp=dao.getData();
-		double res=temp*Math.PI;
+		double d=dao.getData();
+		double res=d*23;
 		return res;
 		
 	}
